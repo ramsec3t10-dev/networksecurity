@@ -12,6 +12,7 @@ Requires-Dist: pymongo[srv]==3.11
 Requires-Dist: scikit-learn
 Requires-Dist: dill
 Requires-Dist: pyaml
+Requires-Dist: mlflow
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist
