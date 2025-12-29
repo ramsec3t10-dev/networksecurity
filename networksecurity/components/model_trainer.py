@@ -2,6 +2,9 @@ import os
 import sys
 import mlflow
 
+import dagshub
+dagshub.init(repo_owner='ramsec3t10-dev', repo_name='networksecurity', mlflow=True)
+
 from networksecurity.exception.exception import NetworkSecurityException 
 from networksecurity.logging.logger import logging
 
@@ -115,6 +118,8 @@ class ModelTrainer:
 
         Network_Model=NetworkModel(preprocessor=preprocessor,model=best_model)
         save_object(self.model_trainer_config.trained_model_file_path,obj=NetworkModel)
+
+        save_object("final_model/model.pkl",best_model)
         #model pusher
         #save_object("final_model/model.pkl",best_model)
         

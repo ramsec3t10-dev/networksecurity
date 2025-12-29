@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 #with help of dataclass which acts as decorator which probably creates variable for an empty class
 
+#this artifact is nothing but it is the output of config_entity of respective ingestion,validation,transformation,model_trainer
+
 @dataclass
 class DataIngestionArtifact:
     trained_file_path:str

@@ -1,0 +1,6 @@
+[ 2025-12-29 22:22:42,206 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-12-29 22:22:42,212 ] 107 dagshub - INFO - Accessing as ramsec3t10-dev
+[ 2025-12-29 22:22:43,303 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/ramsec3t10-dev/networksecurity "HTTP/1.1 200 OK"
+[ 2025-12-29 22:22:44,379 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-12-29 22:22:44,387 ] 107 dagshub - INFO - Initialized MLflow to track repo "ramsec3t10-dev/networksecurity"
+[ 2025-12-29 22:22:44,387 ] 107 dagshub - INFO - Repository ramsec3t10-dev/networksecurity initialized!
