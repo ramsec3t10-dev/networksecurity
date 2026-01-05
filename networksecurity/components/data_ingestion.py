@@ -46,11 +46,11 @@ class dataingestion:
         
     def export_data_into_feature_store(self,dataframe : pd.DataFrame): #feature store , where my raw data is stored as csv is created here
         try:
-            feature_store_fie_path = self.data_ingestion_config.feature_store_file_path
+            feature_store_file_path = self.data_ingestion_config.feature_store_file_path
             #creating folder
-            dir_path = os.path.dirname(feature_store_fie_path)
+            dir_path = os.path.dirname(feature_store_file_path)
             os.makedirs(dir_path,exist_ok=True)
-            dataframe.to_csv(feature_store_fie_path,index=False,header=True)
+            dataframe.to_csv(feature_store_file_path,index=False,header=True)
             return dataframe
 
         except Exception as e:
